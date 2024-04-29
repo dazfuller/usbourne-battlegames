@@ -1,3 +1,4 @@
 from computersandcoding.battlegames import index
 
-index.run()
+if __name__ == '__main__':
+    index.run()

@@ -1,5 +1,6 @@
 from computersandcoding.helpers import clear, is_int
 import computersandcoding.battlegames.vitalmessage as vital_message
+import computersandcoding.battlegames.robotmissile as robot_missile
 
 
 def run() -> None:
@@ -27,15 +28,18 @@ $...............................................................................
 
     print('\n\n')
     print('WHICH GAME WOULD YOU LIKE TO PLAY?\n')
-    print('1. VITAL MESSAGE')
+    print('1. ROBOT MISSILE')
+    print('2. VITAL MESSAGE')
 
     selected_game = 0
-    while not 1 <= selected_game <= 1:
+    while not 1 <= selected_game <= 2:
         selected_game_input = input('> ')
         if is_int(selected_game_input):
             selected_game = int(selected_game_input)
 
     if selected_game == 1:
+        robot_missile.run()
+    elif selected_game == 2:
         vital_message.run()
 
 

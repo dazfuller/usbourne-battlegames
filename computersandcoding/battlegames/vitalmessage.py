@@ -38,7 +38,3 @@ def run() -> None:
         print(f'YOU GOT IT WRONG\nYOU SHOULD HAVE SENT:\n{message}')
     else:
         print('MESSAGE CORRECT\nTHE WAR IS OVER')
-
-
-if __name__ == '__main__':
-    run()
