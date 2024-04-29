@@ -8,7 +8,7 @@ def run() -> None:
     clear()
 
     print('ROBOT MISSILE\n')
-    print('TYPE THE CORRECT LETTER')
+    print('TYPE THE CORRECT CODE')
     print('LETTER (A-Z) TO')
     print('DEFUSE THE MISSILE.')
     print('YOU HAVE 4 CHANCES')
