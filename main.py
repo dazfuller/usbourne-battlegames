@@ -1,4 +1,9 @@
 from computersandcoding.battlegames import index
+from computersandcoding.helpers import clear
 
 if __name__ == '__main__':
-    index.run()
+    try:
+        index.run()
+    except KeyboardInterrupt:
+        clear()
+        print('THANKS FOR PLAYING')
