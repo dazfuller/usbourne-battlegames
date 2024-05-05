@@ -35,8 +35,9 @@ def run() -> None:
         cheated = True
 
     # If the user has not pressed any kep so far then wait between 0 and 0.5 seconds for them to press enter
+    print('HE DRAWS....')
     if not cheated:
-        user_input = get_user_input('HE DRAWS....', random() * 0.5)
+        user_input = get_user_input('', random() * 0.5)
 
     # If the user didn't press enter in time, or cheated, then they are dead
     if cheated or user_input is None:
