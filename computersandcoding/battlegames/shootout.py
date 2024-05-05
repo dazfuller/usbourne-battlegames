@@ -21,7 +21,7 @@ def run() -> None:
     print('YOU ARE BACK TO BACK')
     print('TAKE 10 PACES...')
 
-    for i in range(1, 4):
+    for i in range(1, 11):
         print(i, '..')
         sleep(0.7)
 
