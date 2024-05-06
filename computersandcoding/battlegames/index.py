@@ -4,6 +4,7 @@ from computersandcoding.helpers import clear, is_int
 import computersandcoding.battlegames.vitalmessage as vital_message
 import computersandcoding.battlegames.robotmissile as robot_missile
 import computersandcoding.battlegames.shootout as shootout
+import computersandcoding.battlegames.deserttankbattle as desert_tank_battle
 
 
 def run() -> None:
@@ -35,9 +36,10 @@ $...............................................................................
         print('1. ROBOT MISSILE')
         print('2. VITAL MESSAGE')
         print('3. SHOOTOUT')
+        print('4. DESERT TANK BATTLE')
 
         selected_game = -1
-        while not 0 <= selected_game <= 3:
+        while not 0 <= selected_game <= 4:
             selected_game_input = input('> ')
             if is_int(selected_game_input):
                 selected_game = int(selected_game_input)
@@ -50,6 +52,8 @@ $...............................................................................
             vital_message.run()
         elif selected_game == 3:
             shootout.run()
+        elif selected_game == 4:
+            desert_tank_battle.run()
 
         time.sleep(3)
 
