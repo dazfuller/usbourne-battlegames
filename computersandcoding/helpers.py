@@ -1,4 +1,7 @@
 import os
+from typing import Union
+
+from inputimeout import inputimeout, TimeoutOccurred
 
 
 def clear() -> None:
@@ -19,3 +22,10 @@ def is_int(value: str) -> bool:
         return True
     except ValueError:
         return False
+
+
+def get_user_input(prompt: str, timeout: float) -> Union[str, None]:
+    try:
+        return inputimeout(prompt=prompt, timeout=timeout)
+    except TimeoutOccurred:
+        return None

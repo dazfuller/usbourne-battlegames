@@ -1,17 +1,7 @@
 from random import random
 from time import sleep
-from typing import Union
 
-from inputimeout import inputimeout, TimeoutOccurred
-
-from computersandcoding.helpers import clear
-
-
-def get_user_input(prompt: str, timeout: float) -> Union[str, None]:
-    try:
-        return inputimeout(prompt=prompt, timeout=timeout)
-    except TimeoutOccurred:
-        return None
+from computersandcoding.helpers import clear, get_user_input
 
 
 def run() -> None:
