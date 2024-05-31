@@ -6,6 +6,7 @@ import computersandcoding.battlegames.robotmissile as robot_missile
 import computersandcoding.battlegames.shootout as shootout
 import computersandcoding.battlegames.deserttankbattle as desert_tank_battle
 import computersandcoding.battlegames.traitorscastle as traitors_castle
+import computersandcoding.battlegames.robotinvaders as robot_invaders
 
 
 def run() -> None:
@@ -39,9 +40,10 @@ $...............................................................................
         print('3. SHOOTOUT')
         print('4. DESERT TANK BATTLE')
         print('5. BATTLE AT TRAITORS CASTLE')
+        print('6. ROBOT INVADERS')
 
         selected_game = -1
-        while not 0 <= selected_game <= 5:
+        while not 0 <= selected_game <= 6:
             selected_game_input = input('> ')
             if is_int(selected_game_input):
                 selected_game = int(selected_game_input)
@@ -58,6 +60,8 @@ $...............................................................................
             desert_tank_battle.run()
         elif selected_game == 5:
             traitors_castle.run()
+        elif selected_game == 6:
+            robot_invaders.run()
 
         time.sleep(5)
 
